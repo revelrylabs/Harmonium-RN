@@ -2,9 +2,10 @@
   "name": "harmonium-rn",
   "version": "0.0.1",
   "description": "Harmonium Design System for React Native",
-  "main": "styles/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/revelrylabs/Harmonium-RN/issues"
   },
-  "homepage": "https://github.com/revelrylabs/Harmonium-RN#readme"
+  "homepage": "https://github.com/revelrylabs/Harmonium-RN#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {}
 }
