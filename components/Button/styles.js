@@ -1,57 +1,60 @@
+import { StyleSheet } from 'react-native'
+import { Colors, Fonts, Spacing, Typography } from '../styles'
 
-import {StyleSheet} from 'react-native'
-import {Colors, Fonts, Spacing} from'../styles'
+const base = {
+  flex: 1,
+  height: 60,
+  justifyContent: 'center'
+}
+
+const baseText = {
+  color: Colors.bodyColor,
+  fontFamily: Fonts.bodyFont,
+  fontSize: Typography.body,
+  textAlign: 'center'
+}
 
 export default StyleSheet.create({
+  base,
+  baseText,
   container: {
     flexDirection: 'row',
-    marginBottom: Spacing.globalMarginLarge,
-  },
-  base: {
-    flex: 1,
-    height: 60,
-    justifyContent: 'center',
-  },
-  baseText: {
-    color: Colors.bodyColor,
-    fontFamily: Fonts.bodyFont,
-    fontSize: Fonts.bodyFontSize,
-    textAlign: 'center',
+    marginBottom: Spacing.globalMarginLarge
   },
   // SIZES
   small: {
-    height: 40,
+    height: 40
   },
   narrow: {
-    width: 200,
+    width: 200
   },
   // VARIANTS
   primary: {
     ...base,
-    backgroundColor: Colors.ochsnerGold,
+    backgroundColor: Colors.primary
   },
   primaryText: {
-    ...baseText,
+    ...baseText
   },
   secondary: {
     ...base,
     backgroundColor: 'transparent',
     borderColor: Colors.lightGray,
     borderStyle: 'solid',
-    borderWidth: 1,
+    borderWidth: 1
   },
   secondaryText: {
     ...baseText,
-    color: Colors.bodyColor,
+    color: Colors.bodyColor
   },
   disabled: {
     ...base,
-    backgroundColor: 'transparent',
+    backgroundColor: 'transparent'
   },
   disabledText: {
-    ...baseText,
+    ...baseText
   },
   loadingIndicator: {
-    margin: globalPaddingSmall,
-  },
+    margin: Spacing.globalPaddingSmall
+  }
 })

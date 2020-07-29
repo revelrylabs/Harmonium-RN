@@ -12,21 +12,21 @@ export default StyleSheet.create({
     textAlign: 'center'
   },
   body: {
-    fontSize: bodyFontSize,
-    lineHeight: bodyLineHeight
+    fontSize: Typography.body,
+    lineHeight: Typography.bodyLineHeight
   },
   bodyLarge: {
-    fontSize: bodyFontSizeLarge,
-    lineHeight: bodyLineHeightLarge
+    fontSize: Typography.bodyLarge,
+    lineHeight: Typography.bodyLineHeightLarge
   },
   bodySmall: {
-    fontSize: bodyFontSizeSmall,
-    lineHeight: bodyLineHeightSmall
+    fontSize: Typography.bodySmall,
+    lineHeight: Typography.bodyLineHeightSmall
   },
   helpText: {
     color: Colors.gray,
     fontFamily: Fonts.bodyFont,
-    fontSize: bodyFontSizeSmall,
+    fontSize: Typography.bodySmall,
     marginBottom: Spacing.globalMarginLarge
   }
 })
