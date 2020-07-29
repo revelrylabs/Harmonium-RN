@@ -5,4 +5,3 @@ export const bodyFontBold = 'Arial-BoldMT'
 export const bodyFontItalic = 'Arial-ItalicMT'
 
 export const headerFont = 'Arial-BoldMT'
-
