@@ -20,7 +20,12 @@
     "url": "https://github.com/revelrylabs/Harmonium-RN/issues"
   },
   "homepage": "https://github.com/revelrylabs/Harmonium-RN#readme",
-  "dependencies": {
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "prop-types": "*"
+  },
+  "devDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-native": "^0.63.2"
