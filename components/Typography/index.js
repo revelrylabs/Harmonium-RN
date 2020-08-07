@@ -1,7 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types'
-import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
-import { Colors } from '../../styles'
+import { Colors } from '../../variables'
 import styles from './styles'
 
 function wrapperStyles ({ align = 'left' }) {

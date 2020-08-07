@@ -1,6 +1,7 @@
+import React from 'react';
 import { PropTypes } from 'prop-types'
-import { ActivityIndicator, TouchableHighlight } from 'react-native'
-import { Typography } from '../Typography'
+import { ActivityIndicator, TouchableHighlight, View } from 'react-native'
+import Typography from '../Typography'
 import styles from './styles'
 
 export default function Button ({
@@ -21,14 +22,16 @@ export default function Button ({
         onPress={onPress}
         style={{ ...variantStyles, ...buttonStyle }}
       >
-        {isLoading && (
-          <View style={styles.loadingIndicator}>
-            <ActivityIndicator color={colors.white} size='small' />
-          </View>
-        )}
-        <Typography overrides={{ ...textStyles, textStyle }}>
-          {title}
-        </Typography>
+        <View>
+          {isLoading && (
+            <View style={styles.loadingIndicator}>
+              <ActivityIndicator color={colors.white} size='small' />
+            </View>
+          )}
+          <Typography overrides={{ ...textStyles, textStyle }}>
+            {title}
+          </Typography>
+        </View>
       </TouchableHighlight>
     </View>
   )

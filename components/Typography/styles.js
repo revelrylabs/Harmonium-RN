@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { Colors, Fonts, Spacing, Typography } from '../styles'
+import { Colors, Fonts, Spacing, Typography } from '../../variables'
 
 export default StyleSheet.create({
   h1: {
