@@ -4,13 +4,16 @@
   "description": "Harmonium for React Native",
   "main": "index.js",
   "scripts": {
-    "pod-install": "pod install --project-directory=playground/ios"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
   },
-  "keywords": ["react", "native"],
+  "keywords": [
+    "react",
+    "native"
+  ],
   "author": "revelrylabs",
   "license": "ISC",
   "bugs": {
@@ -24,21 +27,7 @@
   },
   "devDependencies": {
     "prop-types": "^15.7.2",
-    "expo": "~38.0.9",
-    "expo-splash-screen": "^0.5.0",
-    "expo-status-bar": "^1.0.0",
-    "expo-updates": "~0.2.10",
-    "react": "~16.11.0",
-    "react-dom": "~16.11.0",
-    "react-native": "~0.62.2",
-    "react-native-gesture-handler": "~1.6.1",
-    "react-native-reanimated": "~1.9.0",
-    "react-native-screens": "~2.9.0",
-    "react-native-unimodules": "~0.10.1",
-    "react-native-web": "~0.11.7",
-    "@babel/core": "~7.9.0",
-    "babel-jest": "~25.2.6",
-    "jest": "~25.2.6",
-    "react-test-renderer": "~16.11.0"
+    "react": "^16.13.1",
+    "react-native": "^0.63.2"
   }
 }
