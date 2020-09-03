@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install:playground": "npm install && npm install --prefix ./example && cd example/ios && pod install && cd ../..",
-    "repack": "npm pack && npm install harmonium-rn-1.0.0.tgz --prefix ./example",
-    "playground:ios": "cd ./example && npm run ios && cd ..",
-    "playground:android": "cd ./example && npm run android && cd .."
+    "repack": "npm pack && sh install-harmonium"
   },
   "repository": {
     "type": "git",
