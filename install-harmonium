@@ -1,0 +1,5 @@
+PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
+
+TARBALL="harmonium-rn-${PACKAGE_VERSION}.tgz"
+
+npm install $TARBALL --prefix ./example
