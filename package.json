@@ -1,5 +1,5 @@
 {
-  "name": "@revelry/harmonium-rn",
+  "name": "harmonium-rn",
   "version": "0.0.1",
   "description": "Harmonium for React Native",
   "main": "index.js",
