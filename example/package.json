@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "npm run prestorybook && react-native run-android",
-    "ios": "npm run prestorybook && react-native run-ios",
+    "android": "npm run loadstories && react-native run-android",
+    "ios": "npm run loadstories && react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "storybook": "start-storybook -p 7007",
-    "prestorybook": "rnstl"
+    "loadstories": "rnstl"
   },
   "config": {
     "react-native-storybook-loader": {
