@@ -1,6 +1,6 @@
 {
-  "name": "harmonium-rn",
-  "version": "1.0.0",
+  "name": "@revelry/harmonium-rn",
+  "version": "0.0.1",
   "description": "Harmonium for React Native",
   "main": "index.js",
   "scripts": {
@@ -12,11 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
   },
-  "keywords": [
-    "react",
-    "native"
-  ],
-  "author": "revelrylabs",
+  "keywords": ["react", "native"],
+  "author": "revelry",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/revelrylabs/Harmonium-RN/issues"
