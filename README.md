@@ -1,6 +1,6 @@
 # Harmonium-RN
 
-Reactive Native Harmonium UI Toolkit
+React Native Harmonium UI Toolkit
 
 ## Development
 
