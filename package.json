@@ -5,17 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install:playground": "npm install && cd example && npm install && cd ios && pod install && cd ../..",
+    "install:example": "npm install && cd example && npm install && cd ios && pod install && cd ../..",
     "repack": "npm pack && sh install-harmonium"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
   },
-  "keywords": [
-    "react",
-    "native"
-  ],
+  "keywords": ["react", "native"],
   "author": "revelry",
   "license": "ISC",
   "bugs": {

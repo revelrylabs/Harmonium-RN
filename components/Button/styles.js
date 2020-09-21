@@ -47,7 +47,7 @@ export default StyleSheet.create({
   },
   secondaryText: {
     ...baseText,
-    color: Colors.bodyColor
+    color: Colors.primary
   },
   disabled: {
     ...base,
