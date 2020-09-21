@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
   },
-  "keywords": ["react", "native"],
+  "keywords": [
+    "react",
+    "native"
+  ],
   "author": "revelry",
   "license": "ISC",
   "bugs": {

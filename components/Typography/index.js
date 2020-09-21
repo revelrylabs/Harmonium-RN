@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
-import { Text, TouchableOpacity, View } from 'react-native'
-import { Colors } from '../../variables'
+import {Text, TouchableOpacity, View} from 'react-native'
+import {Colors} from '../../variables'
 import styles from './styles'
 
-function wrapperStyles ({ align = 'left' }) {
+function wrapperStyles ({align = 'left'}) {
   const alignLookup = {
     center: 'center',
     left: 'flex-start',
-    right: 'flex-end'
+    right: 'flex-end',
   }
 
   return {
-    alignItems: alignLookup[align]
+    alignItems: alignLookup[align],
   }
 }
 
@@ -23,7 +23,7 @@ function TextContent ({
   children,
   numberOfLines,
   textDecorationLine = 'none',
-  ...overrides
+  overrides = {},
 }) {
   return (
     <Text
@@ -33,11 +33,10 @@ function TextContent ({
         ...{
           color: Colors[color] || Colors.bodyColor,
           textAlign: align,
-          textDecorationLine
+          textDecorationLine,
         },
-        ...overrides
-      }}
-    >
+        ...overrides,
+      }}>
       {children}
     </Text>
   )
@@ -49,10 +48,10 @@ TextContent.propTypes = {
   variant: PropTypes.string,
   color: PropTypes.string,
   align: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
-function Typography ({ hide = false, onPress, ...props }) {
+function Typography ({hide = false, onPress, ...props}) {
   if (hide) {
     return null
   }
@@ -75,7 +74,7 @@ function Typography ({ hide = false, onPress, ...props }) {
 Typography.propTypes = {
   space: PropTypes.object,
   hide: PropTypes.bool,
-  onPress: PropTypes.func
+  onPress: PropTypes.func,
 }
 
 export default Typography

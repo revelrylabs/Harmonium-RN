@@ -4,13 +4,15 @@ import { Colors, Fonts, Spacing, Typography } from '../../variables'
 const base = {
   flex: 1,
   height: 60,
-  justifyContent: 'center'
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderRadius: 3
 }
 
 const baseText = {
   color: Colors.bodyColor,
   fontFamily: Fonts.bodyFont,
-  fontSize: Typography.body,
+  fontSize: Typography.bodyLarge,
   textAlign: 'center'
 }
 
@@ -39,7 +41,7 @@ export default StyleSheet.create({
   secondary: {
     ...base,
     backgroundColor: 'transparent',
-    borderColor: Colors.lightGray,
+    borderColor: Colors.primary,
     borderStyle: 'solid',
     borderWidth: 1
   },
@@ -49,10 +51,11 @@ export default StyleSheet.create({
   },
   disabled: {
     ...base,
-    backgroundColor: 'transparent'
+    backgroundColor: Colors.lightGray
   },
   disabledText: {
-    ...baseText
+    ...baseText,
+    color: Colors.gray
   },
   loadingIndicator: {
     margin: Spacing.globalPaddingSmall
