@@ -2,6 +2,67 @@
 
 React Native Harmonium UI Toolkit
 
+## Getting Started
+
+```
+npm install harmonium-rn
+```
+
+## Usage
+
+Wrap your app in a `ThemeContext.Provider` to propagate your custom theme to all of your components. You can override the default theme by passing overrides into `getTheme` ass the value for `ThemeContext.Provider`.
+
+```
+import React, { Component } from 'react';
+
+import { COLOR, ThemeContext, getTheme } from 'harmonium-rn';
+
+// You override the default theme's color palette, individual component styles, and more
+const themeOverrides = {
+  palette: {
+    primaryColor: COLOR.green500,
+  },
+  button: {
+    container: {
+      height: 30,
+    }
+  },
+};
+
+class Main extends Component {
+  render() {
+    return (
+      <ThemeContext.Provider value={getTheme(themeOverrides)}>
+        <App />
+      </ThemeContext.Provider>
+    );
+  }
+}
+```
+
+You can access `theme` in props from anywhere:
+
+```
+import { withTheme } from 'harmonium-rn'
+
+class CustomButton extends Component {
+  render() {
+    const { primaryColor } = this.props.theme.palette;
+
+    return ...
+  }
+}
+
+export default withTheme(MyButton)
+
+```
+
+You can also pass style overrides to specific components instead of overriding elements for the entire theme:
+
+```
+<Button style={{container: {height: 30, backgroundColor: 'red'}}}>
+```
+
 ## Development
 
 - New components should be added to the `src` directory at the root of the project
