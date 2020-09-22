@@ -11,6 +11,6 @@ React Native Harmonium UI Toolkit
 
 ## Running the Example App
 
-- Run `npm run install:example` from root directory
-- Navigate to `example`, and then `npm run ios` or `npm run android`
-- If you make updates to the harmonium package itself, you will need to regenerate the package and re-install it in the example app. To do this, run `npm run repack` in the root of the project. That will generate a new `.tgz` file and install it in the example app as a dependency. New stories can be made in `example/src/stories` with name in format `*.story.js`.
+- Run `npm run install:example` to install everything on the example app
+- Run `npm run start:example` to start the example app
+  - NOTE: you will need to restart the example app if you make any changes to the harmonium package
