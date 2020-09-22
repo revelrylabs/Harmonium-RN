@@ -17,7 +17,7 @@ import React, { Component } from 'react';
 
 import { COLOR, ThemeContext, getTheme } from 'harmonium-rn';
 
-// You override the default theme's color palette, individual component styles, and more
+// You can override the default theme's color palette, individual component styles, and more
 const themeOverrides = {
   palette: {
     primaryColor: COLOR.green500,
@@ -53,7 +53,7 @@ class CustomButton extends Component {
   }
 }
 
-export default withTheme(MyButton)
+export default withTheme(CustomButton)
 
 ```
 
