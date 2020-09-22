@@ -64,6 +64,9 @@ class Button extends React.Component {
 Button.propTypes = {
   onPress: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
+  primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  accent: PropTypes.bool,
   disabled: PropTypes.bool,
   theme: PropTypes.object.isRequired
 }
