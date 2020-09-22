@@ -4,9 +4,9 @@ React Native Harmonium UI Toolkit
 
 ## Development
 
-- New components should be added to the `components` directory at the root of the project
-- Each component should get its own directory with one `index.js` and one `styles.js` file
-- Component styles should use variables from the `variables` directory as much as possible
+- New components should be added to the `src` directory at the root of the project
+- Each component should get its own directory with one `index.js` file
+- Each component should have a `getStyles` function which takes both theme and style override props
 - Please add stories to the example app storybook whenever adding new components
 
 ## Running the Example App
