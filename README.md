@@ -10,7 +10,7 @@ npm install harmonium-rn
 
 ## Usage
 
-Wrap your app in a `ThemeContext.Provider` to propagate your custom theme to all of your components. You can override the default theme by passing overrides into `getTheme` ass the value for `ThemeContext.Provider`.
+Wrap your app in a `ThemeContext.Provider` to propagate your custom theme to all of your components. You can override the default theme by passing overrides into `getTheme` as the `value` for `ThemeContext.Provider`.
 
 ```
 import React, { Component } from 'react';
