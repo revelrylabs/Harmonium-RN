@@ -1,6 +1,6 @@
 import React from 'react'
 import {View} from 'react-native'
-import {Button, ThemeContext, getTheme} from 'harmonium-rn'
+import {COLOR, Button, ThemeContext, getTheme} from 'harmonium-rn'
 import {storiesOf} from '@storybook/react-native'
 
 storiesOf('Button', module)
@@ -34,6 +34,16 @@ storiesOf('Button', module)
     <Button
       disabled
       text='Disabled Button'
+      onPress={() => console.warn('Clicked!')}
+    />
+  ))
+  .add('Custom Button', () => (
+    <Button
+      style={{
+        container: {backgroundColor: COLOR.indigo900, borderRadius: 20},
+        text: {color: COLOR.indigo200},
+      }}
+      text='Custom Button'
       onPress={() => console.warn('Clicked!')}
     />
   ))
