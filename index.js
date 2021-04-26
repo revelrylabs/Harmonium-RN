@@ -1,1 +1,1 @@
-export * from './src/index'
+export * from './packages/src/index'
