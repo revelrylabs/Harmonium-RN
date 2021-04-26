@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
   },
-  "keywords": [
-    "react",
-    "native"
-  ],
+  "keywords": ["react", "native"],
   "author": "revelry",
   "license": "ISC",
   "bugs": {
@@ -24,12 +21,11 @@
   },
   "homepage": "https://github.com/revelrylabs/Harmonium-RN#readme",
   "peerDependencies": {
-    "prop-types": "*",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "prop-types": "*"
   },
   "devDependencies": {
-    "lerna": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-native": "^0.63.2"
