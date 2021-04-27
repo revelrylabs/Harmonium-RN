@@ -4,7 +4,7 @@
   "description": "Harmonium for React Native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo Testing src",
     "repack": "npm pack && sh install-harmonium",
     "example:install": "npm install && cd example && npm install && cd ios && pod install && cd ../..",
     "example:start": "npm run repack && cd example && npm run ios && cd .."
