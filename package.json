@@ -1,38 +1,12 @@
 {
-  "name": "harmonium-rn",
-  "version": "0.0.2",
-  "description": "Harmonium for React Native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "repack": "npm pack && sh install-harmonium",
-    "example:install": "npm install && cd example && npm install && cd ios && pod install && cd ../..",
-    "example:start": "npm run repack && cd example && npm run ios && cd .."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/revelrylabs/Harmonium-RN.git"
-  },
-  "keywords": ["react", "native"],
-  "author": "revelry",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/revelrylabs/Harmonium-RN/issues"
-  },
-  "homepage": "https://github.com/revelrylabs/Harmonium-RN#readme",
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-    "prop-types": "*"
-  },
-  "devDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-native": "^0.63.2"
-  },
-  "dependencies": {
-    "color": "^3.1.2",
-    "hoist-non-react-statics": "^3.3.2",
-    "lodash.merge": "^4.6.2"
-  }
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    },
+    "scripts":{
+        "start":"lerna run start",
+        "test":"lerna run test"
+
+    }
 }
